@@ -32,7 +32,7 @@ namespace Bayesian.Logic
             if (description == null)
                 throw new Exception("Empty event!");
 
-            if (description.First() == '-')
+            if (description.First() == '-' || description.First() == '¬')
             {
                 Sign = false;
                 Name = description.Remove(0, 1);
