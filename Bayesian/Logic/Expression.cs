@@ -27,6 +27,7 @@ namespace Bayesian.Logic
         #endregion
 
         #region Methods
+
         public string Write()
         {
             if (Probability == 1)
@@ -50,6 +51,39 @@ namespace Bayesian.Logic
             temp += ")";
             return temp;
         }
+
+        public bool IsParent(Expression exp)
+        {
+            if (exp == this)
+                throw new Exception("Something went wrong, and you are comparing the same!");
+
+            if (Parent == null) // Checking if the start of the tree
+                return false;
+
+            if (Parent == exp) // Checking if the exp is parent
+                return true;
+            else               // Go deeper into the tree
+                return Parent.IsParent(exp);
+        }
+
+        public bool IsChild(Expression exp)
+        {
+            if (exp == this)
+                throw new Exception("Something went wrong, and you are comparing the same!");
+
+            if (ChildExpressions.Count == 0) // Checking if the end of the tree
+                return false;
+
+            if (ChildExpressions.Contains(exp)) // Checking if there are exp in ChildExpressions
+                return true;
+            else
+            {
+                foreach (Expression t in ChildExpressions)  // Go deepre into the tree
+                    t.IsChild(exp);
+                return false;
+            }
+        }
+
         #endregion
     }
 }

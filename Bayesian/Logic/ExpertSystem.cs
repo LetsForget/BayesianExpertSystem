@@ -68,6 +68,7 @@ namespace Bayesian.Logic
                 CalculatedExpressions.Add(exp);
         }
   
+        
         #endregion
     }
 }

@@ -50,10 +50,12 @@ namespace Bayesian.Logic
             Event copy = new Event(Name);
             return copy;
         }
+
         public string ReturnClearName()
         {
             return _name;
         }
+
         #endregion
     }
 }
