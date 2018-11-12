@@ -41,10 +41,10 @@ namespace Bayesian
 
             Expression exp = new Expression();
             exp.PossibleEvents.Add(new Event(s.Name));
-            exp.ExactEvents.Add(new Event(b.Name));
+            //exp.PossibleEvents.Add(new Event(b.Name));
             exp.ExactEvents.Add(new Event(l.Name));
             Calculator c = new Calculator();
-            c.Fourth(exp);
+            c.Fifth_A(exp);
         }
     }
 }

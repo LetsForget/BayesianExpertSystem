@@ -42,5 +42,18 @@ namespace Bayesian.Logic
             Name = description;   
         }
         #endregion
+
+        #region Methods
+
+        public Event ReturnCopy()
+        {
+            Event copy = new Event(Name);
+            return copy;
+        }
+        public string ReturnClearName()
+        {
+            return _name;
+        }
+        #endregion
     }
 }
