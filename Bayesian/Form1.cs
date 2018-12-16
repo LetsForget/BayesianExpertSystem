@@ -24,6 +24,13 @@ namespace Bayesian
             es = ExpertSystem.LoadData("AI Class Data Base");
             label1.UseMnemonic = false;
             label1.Text = es.WriteExpressionsList();
+            Expression exp = new Expression();
+            exp.PossibleEvents.Add(new Event("sensor"));
+            exp.ExactEvents.Add(new Event("burglary"));
+            exp.ExactEvents.Add(new Event("call"));
+            string answer = "";
+            es.CalculateExpression(exp, ref answer);
+            label1.Text = answer;
         }
     }
 }
