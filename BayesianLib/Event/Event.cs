@@ -1,11 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Bayesian.Logic
+
+namespace BayesianLib
 {
     public class Event
     {
@@ -76,7 +75,9 @@ namespace Bayesian.Logic
             
         public Event ReturnCopy()
         {
+            
             Event copy = new Event(Name);
+            copy.Sign = Sign;
             return copy;
         }
 

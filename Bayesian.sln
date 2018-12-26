@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bayesian", "Bayesian\Bayesian.csproj", "{50CF6F54-C078-442D-9205-73971C444638}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BayesianLib", "BayesianLib\BayesianLib.csproj", "{C16D96BE-51FD-4790-A4EB-63AF50D18DFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{50CF6F54-C078-442D-9205-73971C444638}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50CF6F54-C078-442D-9205-73971C444638}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50CF6F54-C078-442D-9205-73971C444638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C16D96BE-51FD-4790-A4EB-63AF50D18DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16D96BE-51FD-4790-A4EB-63AF50D18DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16D96BE-51FD-4790-A4EB-63AF50D18DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16D96BE-51FD-4790-A4EB-63AF50D18DFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

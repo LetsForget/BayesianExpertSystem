@@ -70,10 +70,6 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logic\Calculator.cs" />
-    <Compile Include="Logic\Event.cs" />
-    <Compile Include="Logic\ExpertSystem.cs" />
-    <Compile Include="Logic\Expression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -112,6 +108,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BayesianLib\BayesianLib.csproj">
+      <Project>{c16d96be-51fd-4790-a4eb-63af50d18dfc}</Project>
+      <Name>BayesianLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logic\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
